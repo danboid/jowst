@@ -5,10 +5,9 @@
 
 #include <avr/io.h>
 #include <avr/pgmspace.h>
-#include <stdbool.h>
+//#include <stdbool.h>
 #include <stdlib.h>
 #include <uzebox.h>
-
 #include "data/jousta.inc"
 
 const char mapP1[] PROGMEM = {
@@ -26,8 +25,8 @@ int main()
     ClearVram();
     while (1)
     {
-        WaitVsync(1); // This is key to keeping accurate time.
-        MapSprite2(1, mapP1, 0); //setup tank for drawing
+        WaitVsync(1);
+        MapSprite2(1, mapP1, 0);
         MoveSprite(1, 128, 200, 2, 2);
     }
 }
