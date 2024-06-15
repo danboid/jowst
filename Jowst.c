@@ -13,8 +13,8 @@
 
 const char mapP1[] PROGMEM = {
    2, 2,  // Width/height that MapSprite reads to know how to map the sprite
-   0x1, 0x2,
-   0x3, 0x0
+   1, 2,
+   3, 0
 };
 
 
